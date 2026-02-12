@@ -25,7 +25,8 @@
    .HTML & CSS
 
 output:
-    ![bank output](https://github.com/user-attachments/assets/25c8aeb7-deb3-40d5-8ad3-2a026739f5db
 
+
+<img width="990" height="507" alt="image" src="https://github.com/user-attachments/assets/c1d17f91-c911-4f30-917b-c8f99511c126" />
 
    
