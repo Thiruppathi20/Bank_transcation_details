@@ -1,0 +1,23 @@
+//ACCOUNT TABLE
+create table ACCOUNT_TBL(
+Account_Number varchar2(10) primary key,
+Customer_name varchar2(15),
+Balance number(10,2)
+);
+
+//TRANSFER TABLE 
+
+create table TRANSFER_TBL(
+Transaction_ID number(4) primary key,
+Account_number varchar2(10) ,
+Benifichary_account_number varchar2(10)
+CONSTRAINT fk_account FOREIGN KEY (Account_Number) REFERENCES ACCOUNT_TBL(Account_Number),
+ CONSTRAINT fk_benifichary FOREIGN KEY (Benifichary_Account_Number) REFERENCES ACCOUNT_TBL(Account_Number));
+
+
+
+create sequence transaction_seq
+START WITH 1000
+MINVALUE 1000
+MAXVALUE 9999
+INCREAMENT BY 1;
